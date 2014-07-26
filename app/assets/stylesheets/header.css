@@ -1,0 +1,28 @@
+
+div.nav-collapse {
+	border: solid black;
+	padding: 10px;
+} 
+
+
+div.nav-collapse li {
+	display: inline;
+	padding-right: 5px;
+} 
+
+ div.nav-collapse ul {
+ 	display: inline;
+ }
+
+ div.nav-collapse a {
+ 	text-decoration: none;
+ }
+
+ .pull-right {
+ 	float: right;
+ 	margin-right: 15px;
+ }
+
+ .nav-item {
+ 	padding-right: 10px;
+ }

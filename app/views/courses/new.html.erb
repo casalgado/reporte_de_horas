@@ -1,0 +1,23 @@
+
+<div class="content">
+
+<%= form_for Course.new do |f| %>
+	<%= f.label :programa %>
+	<%= f.text_field :programa %>
+
+	<%= f.label :semestre %>
+	<%= f.text_field :semestre %>
+
+	<%= f.label :nombre %>
+	<%= f.text_field :nombre %>
+
+	<%= f.label :duracion %>
+	<%= f.text_field :duracion %>
+
+
+	
+
+	<%= f.submit %>
+	<% end %>
+
+<div class="content">

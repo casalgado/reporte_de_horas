@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  carrera: MyString
+  semestre: 1
+  nombre: MyString
+  dia_semana: MyString
+  hora_inicio: 2014-07-24 16:36:26
+  duracion: 1
+
+two:
+  carrera: MyString
+  semestre: 1
+  nombre: MyString
+  dia_semana: MyString
+  hora_inicio: 2014-07-24 16:36:26
+  duracion: 1
