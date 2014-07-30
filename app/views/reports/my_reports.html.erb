@@ -1,0 +1,18 @@
+<h1>Mis Clases</h1>
+<p></p>
+
+
+
+
+
+<ul class="report_list">
+	<% for report in @my_reports %>
+	<ul>
+	<li> <%= link_to "#{report.course_name}", edit_report_path(report) %></li>
+
+	
+	</ul>
+	<% end %>
+	<ul>
+
+	

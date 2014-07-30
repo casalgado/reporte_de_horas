@@ -1,0 +1,34 @@
+
+
+	<%= render "reports/calendar_nav" %>		
+
+<!-- <dl class="calendar_report_list">
+	<% for report in @my_reports %>
+	<dt> <%= report.course_name %>
+		<dd>
+			<% for day in report.calendars %>
+	<li><%= day.week_day %></li>
+	<li><%= day.month %></li>
+	<li><%= day.day_of_month %></li>
+	 <br />
+			<% end %>
+	</dd></dt>
+	<% end %>
+	<ul> -->
+
+<br />
+<br />
+<br />
+
+<ul class="report_list">
+	<% for report in @my_reports %>
+	<ul>
+	<li class="first_time_in_report_list"><%= report.course_name %></li>
+	<li class="last_time_in_report_list"><%= report.course_start_time.strftime("%I:%M %p") %></li>
+	<li class="last_time_in_report_list"><%= report.week_day %></li>
+	
+	</ul>
+	<% end %>
+	<ul>
+
+	

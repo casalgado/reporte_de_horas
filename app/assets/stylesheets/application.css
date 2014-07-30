@@ -13,10 +13,14 @@
  */
 
 
-
+a:link, a:visited, a:active {
+  color: #333333;
+  text-decoration: none;
+}
 
 body {
 	font-family: Helvetica;
+	color: #333333;
 	width: 960px;
 	margin: 20px auto auto auto;
 /*	padding-top:  65px;
@@ -26,3 +30,9 @@ body {
 .content {
 	margin-top: 25px;
 }
+
+dl.calendar_report_list li {
+	display: inline;
+	padding-right: 10px;
+}
+

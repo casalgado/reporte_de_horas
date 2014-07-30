@@ -1,0 +1,12 @@
+
+<ul class="requested_month_list">
+	<div id="period_cuarter_names">
+<li><%= link_to "Invierno", :controller => "reports", :action => "calendar_reports", :period => 1 %> </li>
+<li><%= link_to "Verano",   :controller => "reports", :action => "calendar_reports", :period => 2 %> </li>
+<li><%= link_to "Otoño",    :controller => "reports", :action => "calendar_reports", :period => 3 %> </li>
+	</div>
+	<div id="period_months">
+	<%= render "reports/calendar_nav_months" %>	
+	</div>
+
+</ul>	

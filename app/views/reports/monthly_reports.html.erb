@@ -1,0 +1,18 @@
+
+
+	<%= render "reports/calendar_nav" %>	
+	
+
+<dl class="calendar_report_list">
+	<% for report in @my_reports %>
+	<dt> <%= report.course_name %>
+		<dd>
+			<% for day in report.month_interval(@start, @finish) %>
+	<li><%= day.week_day %></li>
+	<li><%= day.month %></li>
+	<li><%= day.day_of_month %></li>
+	 <br />
+			<% end %>
+	</dd></dt>
+	<% end %>
+	<ul>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  course_id: 1
+  course_day: MyString
+  course_duration: 1
+  course_start_time: 2014-07-26 09:30:47
+
+two:
+  user_id: 1
+  course_id: 1
+  course_day: MyString
+  course_duration: 1
+  course_start_time: 2014-07-26 09:30:47

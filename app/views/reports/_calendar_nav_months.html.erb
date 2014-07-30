@@ -1,0 +1,23 @@
+
+<% if @period == "1" %>
+
+<li><%= link_to "Enero",   :controller => "reports", :action => "monthly_reports", :start => "Diciembre", :finish => "Enero"  , :period => @period %> </li>
+<li><%= link_to "Febero",  :controller => "reports", :action => "monthly_reports", :start => "Enero"   ,  :finish => "Febrero", :period => @period %> </li>
+<li><%= link_to "Marzo",  :controller => "reports", :action => "monthly_reports", :start =>  "Febrero" ,  :finish => "Marzo"   , :period => @period %> </li>
+<li><%= link_to "Abril", :controller => "reports", :action => "monthly_reports", :start =>   "Marzo"   ,  :finish => "Abril"  , :period => @period %> </li>
+
+<% elsif @period == "2" %>
+
+<li><%= link_to "Mayo",   :controller => "reports", :action => "monthly_reports", :start => "Abril"  , :finish => "Mayo"  , :period => @period %> </li>
+<li><%= link_to "Junio",  :controller => "reports", :action => "monthly_reports", :start => "Mayo"   , :finish => "Junio" , :period => @period %> </li>
+<li><%= link_to "Julio",  :controller => "reports", :action => "monthly_reports", :start => "Junio" , :finish => "Julio"  , :period => @period %> </li>
+<li><%= link_to "Agosto", :controller => "reports", :action => "monthly_reports", :start => "Julio", :finish => "Agosto"  , :period => @period %> </li>
+
+<% elsif @period == "3" %>
+
+<li><%= link_to "Septiembre",   :controller => "reports", :action => "monthly_reports", :start => "Agosto"  , :finish => "Septiembre"  , :period => @period %> </li>
+<li><%= link_to "Octubre",  :controller => "reports", :action => "monthly_reports", :start => "Septiembre"   , :finish => "Octubre" , :period => @period %> </li>
+<li><%= link_to "Noviembre",  :controller => "reports", :action => "monthly_reports", :start => "Octubre" , :finish => "Noviembre"  , :period => @period %> </li>
+<li><%= link_to "Diciembre", :controller => "reports", :action => "monthly_reports", :start => "Noviembre", :finish => "Diciembre"  , :period => @period %> </li>
+
+<% end %>

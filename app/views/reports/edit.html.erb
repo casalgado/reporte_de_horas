@@ -1,0 +1,37 @@
+<h2> <%= @report.course.name %> </h2>
+
+
+
+<dl class="edit_report">
+	<dd id="bold_dd">Programa:</dd>
+		<dd><%= @report.course.program %></dd><br />
+	<dd id="bold_dd">Cuatrimestre:</dt>
+		<dd><%= @report.course.semester %></dd><br />
+	<dd id="bold_dd">Creditos:</dt>
+		<dd><%= @report.course.credits %></dd><br />
+	<dd id="bold_dd">Area:</dt>
+		<dd><%= @report.course.area %></dd><br />
+
+	</dl>
+
+
+	<h3> Editar clase </h3>
+
+	<%= form_for @report do |f| %>
+
+	<%= f.label :period %>
+  <%= select(:report, :period, options_for_select(@array_for_period, @default_period)) %>
+
+<!--   <%= f.label :course_id %>
+  <%= select(:report, :course_id, options_for_select(@array_for_options)) %> -->
+
+	<%= f.label :week_day %>
+	<%= select(:report, :week_day, options_for_select(@array_for_days)) %>
+
+	<%= f.label :course_start_time %>
+	<%= f.time_select :course_start_time, {:minute_step => 30, ampm: true} %>
+
+	<%= f.submit %>
+	<%= link_to "Delete", @report, method: :delete%></li>
+	<% end %>
+

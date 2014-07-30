@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  month: MyString
+  week_day: MyString
+  day_of_month: 1
+  holiday: false
+
+two:
+  month: MyString
+  week_day: MyString
+  day_of_month: 1
+  holiday: false

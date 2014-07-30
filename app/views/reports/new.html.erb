@@ -1,0 +1,32 @@
+<div>
+<ul class="report_list">
+	<% for report in @my_reports %>
+	<ul>
+	<li><%= report.course_name %></li>
+	</ul>
+	<% end %>
+	<ul>
+	</div>
+
+
+
+<div class="content">
+
+<%= form_for Report.new do |f| %>
+
+	<%= f.label :period %>
+  <%= select(:report, :period, options_for_select(@array_for_period, @default_period)) %>
+
+  <%= f.label :course_id %>
+  <%= select(:report, :course_id, options_for_select(@array_for_options)) %>
+
+	<%= f.label :week_day %>
+	<%= select(:report, :week_day, options_for_select(@array_for_days)) %>
+
+	<%= f.label :course_start_time %>
+	<%= f.time_select :course_start_time, {:minute_step => 30, ampm: true} %>
+
+	<%= f.submit %>
+	<% end %>
+
+<div class="content">

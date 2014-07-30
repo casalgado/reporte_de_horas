@@ -1,4 +1,7 @@
 class CoursesController < ApplicationController
+  
+  before_action :authenticate_user!
+
   def new
   end
 
@@ -16,8 +19,7 @@ class CoursesController < ApplicationController
   end
 
   def index
-    doc = Roo::Excel.new('/Users/carlosalbertosalgadohazbun/Desktop/CourseLibrary.xls')
-    @course_names = doc.column(2)
+    @course_names = Course.all
   end
 
     private
@@ -27,3 +29,4 @@ class CoursesController < ApplicationController
     params.require(:course).permit(allow)
   end
 end
+

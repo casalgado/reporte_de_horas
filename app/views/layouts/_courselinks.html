@@ -1,0 +1,19 @@
+<% if user_signed_in? %>
+  <li>
+  <%= link_to('Agregar Clase', new_report_path) %>        
+  </li>
+  <li>
+  <%= link_to("Mis Clases", my_reports_user_reports_path) %>
+  </li>
+    <li>
+  <%= link_to("Calendario", calendar_reports_user_reports_path) %>
+  </li>
+
+<% else %>
+  <li>
+  <%= link_to('Tutorial', '#')  %>  
+  </li>
+  <li>
+  <%= link_to('La Salle', '#')  %>
+  </li>
+<% end %>
